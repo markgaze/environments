@@ -20,8 +20,8 @@ Set-TaskbarOptions -Size Small -Dock Bottom -Combine Always -AlwaysShowIconsOn
  
 #--- Windows Subsystems/Features ---
 choco install Microsoft-Hyper-V-All -source windowsFeatures
-Enable-WindowsOptionalFeature -Online -FeatureName containers -All
-choco install Microsoft-Windows-Subsystem-Linux -source windowsfeatures
+Enable-WindowsOptionalFeature -Online -FeatureName containers -All -NoRestart
+choco install Microsoft-Windows-Subsystem-Linux -source windowsfeatures -y
 Invoke-WebRequest -Uri https://aka.ms/wsl-ubuntu-1604 -OutFile ~/Ubuntu.appx -UseBasicParsing
 Add-AppxPackage -Path ~/Ubuntu.appx
  
