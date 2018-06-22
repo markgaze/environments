@@ -25,4 +25,5 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", path: "scripts/install-boxstarter.ps1", privileged: true
   config.vm.provision "shell", path: "scripts/boxstarter.ps1", privileged: true
   config.vm.provision "reload"
+  config.vm.provision "file", source: "../../config/.hyper.js", destination: "~/.hyper.js"
 end
