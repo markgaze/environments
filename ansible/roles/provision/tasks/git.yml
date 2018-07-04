@@ -1,0 +1,14 @@
+---
+- name: Create apps folder
+  file:
+    path: $HOME/git/apps
+    state: directory
+    mode: 0755
+
+- name: Clone git repos
+  git:
+    repo: git@github.com:markgaze/{{ item }}.git
+    dest: $HOME/git/apps/{{ item }}
+    force: no
+    update: no
+  with_items: "{{git_repos}}"

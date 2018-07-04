@@ -1,0 +1,11 @@
+---
+- name: Clone dotfiles git repo
+  git:
+    repo: https://github.com/MarkGaze/dotfiles.git
+    dest: $HOME/git/dotfiles
+    force: no
+    update: no
+
+- name: Run Makefile
+  make:
+    chdir: $HOME/git/dotfiles

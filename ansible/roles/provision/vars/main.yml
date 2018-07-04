@@ -1,0 +1,16 @@
+---
+apt_packages:
+  - bash-completion
+  - git
+  - curl
+  - wget
+  - vim
+  - cowsay
+  - node
+  - virtualbox
+  - virtualbox-ext-pack
+  - virtualbox-qt
+
+node_packages:
+
+git_repos:

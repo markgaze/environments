@@ -1,0 +1,7 @@
+---
+- import_tasks: apt.yml
+- import_tasks: git.yml
+- import_tasks: dotfiles.yml
+- import_tasks: krypton.yml
+- import_tasks: npm.yml
+- import_tasks: vscode.yml
