@@ -1,0 +1,5 @@
+- name: a playbook to setup a host machine
+  hosts: host
+  connection: local
+  roles:
+    - provision
