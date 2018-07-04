@@ -14,3 +14,4 @@ apt_packages:
 node_packages:
 
 git_repos:
+  - dotfiles

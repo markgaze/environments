@@ -12,11 +12,26 @@ explain:
 	#
 	### Installation
 	#
-	#  -> $$ make provision
+	#  -> $$ make install provision
 	#
 	###
 
 provision: setup-git-config ansible
+
+install: install-ansible install-krypton
+
+.PHONY: install-ansible
+install-ansible:
+	sudo apt-get update
+	sudo apt-get install software-properties-common
+	sudo apt-add-repository ppa:ansible/ansible
+	sudo apt-get update
+	sudo apt-get install ansible
+
+.PHONY: install-krypton
+install-krypton:
+	curl https://krypt.co/kr | sh
+	kr pair
 
 .PHONY: setup-git-config
 setup-git-config:

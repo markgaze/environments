@@ -1,3 +1,0 @@
----
-- name: Install Krypton
-  shell: curl https://krypt.co/kr | sh
