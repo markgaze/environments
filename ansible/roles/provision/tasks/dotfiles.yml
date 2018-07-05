@@ -1,4 +1,5 @@
 ---
 - name: Run Makefile
-  make:
+  shell: make install
+  args:
     chdir: $HOME/git/apps/dotfiles
