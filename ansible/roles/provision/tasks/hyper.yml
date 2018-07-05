@@ -5,7 +5,7 @@
     state: latest
 
 - name: Download hyper.js deb file
-  shell: wget https://hyper-updates.now.sh/download/linux_deb
+  shell: wget https://releases.hyper.is/download/deb
 
 - name: Install hyper.js
   shell: gdebi -n linux_deb
