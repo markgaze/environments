@@ -12,3 +12,8 @@
 
 - name: Remove downloaded file
   shell: rm deb
+
+- name: Add configuration file
+  copy:
+    src: ../config/.hyper.js
+    dest: $HOME/.hyper.js
