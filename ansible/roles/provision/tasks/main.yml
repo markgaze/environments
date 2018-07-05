@@ -7,3 +7,4 @@
 - import_tasks: chrome.yml
 - import_tasks: vscode.yml
 - import_tasks: hyper.yml
+- import_tasks: vagrant.yml
