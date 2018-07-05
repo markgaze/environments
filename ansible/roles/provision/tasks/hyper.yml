@@ -15,5 +15,5 @@
 
 - name: Add configuration file
   copy:
-    src: ../config/.hyper.js
+    src: ../config/ubuntu.hyper.js
     dest: $HOME/.hyper.js
