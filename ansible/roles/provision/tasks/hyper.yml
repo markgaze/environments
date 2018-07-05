@@ -8,4 +8,4 @@
   shell: wget https://hyper-updates.now.sh/download/linux_deb
 
 - name: Install hyper.js
-  shell: gdebi linux_deb
+  shell: gdebi -n linux_deb
