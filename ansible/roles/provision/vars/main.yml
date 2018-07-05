@@ -9,9 +9,15 @@ apt_packages:
   - virtualbox
   - virtualbox-ext-pack
   - virtualbox-qt
+  - vagrant
   - libgconf2-4
 
 node_packages:
 
 git_repos:
   - dotfiles
+
+vagrant_version: "2.1.2"
+vagrant_tmp_dir: "/opt/ansible_downloads/"
+vagrant_tmp_deb: "{{vagrant_tmp_dir}}/vagrant_{{vagrant_version}}.deb"
+vagrant_url_deb: "https://releases.hashicorp.com/vagrant/{{vagrant_version}}/vagrant_{{vagrant_version}}_x86_64.deb"
