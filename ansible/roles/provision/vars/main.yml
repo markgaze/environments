@@ -9,6 +9,7 @@ apt_packages:
   - virtualbox
   - virtualbox-ext-pack
   - virtualbox-qt
+  - libgconf2-4
 
 node_packages:
 
