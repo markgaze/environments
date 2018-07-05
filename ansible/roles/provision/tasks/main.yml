@@ -6,3 +6,4 @@
 - import_tasks: npm.yml
 - import_tasks: chrome.yml
 - import_tasks: vscode.yml
+- import_tasks: hyper.yml

@@ -1,0 +1,11 @@
+---
+- name: Install gdebi
+  apt:
+    name: gdebi
+    state: latest
+
+- name: Download hyper.js deb file
+  shell: wget https://hyper-updates.now.sh/download/linux_deb
+
+- name: Install hyper.js
+  shell: gdebi linux_deb
