@@ -7,7 +7,7 @@
 
 - name: Clone git repos
   git:
-    repo: git@github.com:markgaze/{{ item }}.git
+    repo: https://github.com/markgaze/{{ item }}
     dest: $HOME/git/apps/{{ item }}
     force: no
     update: no
