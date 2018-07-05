@@ -15,5 +15,3 @@
   apt:
     name: code
     update_cache: true
-  when:
-    - vscode_install
