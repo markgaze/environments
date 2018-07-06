@@ -10,6 +10,7 @@ apt_packages:
   - virtualbox-ext-pack
   - virtualbox-qt
   - libgconf2-4
+  - fonts-firacode
 
 node_packages:
 
