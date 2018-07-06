@@ -15,3 +15,6 @@
   apt:
     name: code
     update_cache: true
+
+- name: Install sync plugin
+  shell: code --install-extension Shan.code-settings-sync
