@@ -6,10 +6,6 @@
     update_cache: yes
     cache_valid_time: 86400 #One day
 
-- name: Add universe repository
-  apt_repository:
-      repo: universe
-
 - name: Install packages
   become: true
   apt:
