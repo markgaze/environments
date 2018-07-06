@@ -4,3 +4,6 @@
 
 - name: Install vagrant for Debian OS family
   apt: deb={{vagrant_tmp_deb}}
+
+- name: Install reload plugin
+  shell: vagrant plugin install vagrant-reload
