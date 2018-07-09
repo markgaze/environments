@@ -1,0 +1,8 @@
+---
+- name: Install Elementary Tweaks
+  become: true
+  shell: |
+    add-apt-repository ppa:philip.scott/elementary-tweaks
+    apt-get update
+    apt-get install elementary-tweaks
+  when: ansible_distribution == "elementary OS"
