@@ -39,6 +39,7 @@ choco install hyper -y
 choco install paint.net -y
 choco install mremoteng -y
 choco install notepadplusplus -y
+choco install visualstudio2017enterprise -y
 
 #--- VS Code ---
 code --install-extension Shan.code-settings-sync
