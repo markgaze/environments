@@ -8,6 +8,7 @@
   shell: wget https://releases.hyper.is/download/deb
 
 - name: Install hyper.js
+  become: true
   shell: gdebi -n deb
 
 - name: Remove downloaded file
