@@ -1,0 +1,24 @@
+---
+- name: Make sure HTTPS is supported by apt
+  apt:
+    name: apt-transport-https
+    state: present
+    update_cache: yes
+
+- name: Import Microsoft APT key
+  apt_key:
+    url: "https://packages.microsoft.com/keys/microsoft.asc"
+    state: present
+
+- name: Add repo
+  apt_repository:
+    repo: deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-xenial-prod xenial main
+    filename: "dotnetdev"
+    state: present
+    update_cache: yes
+
+- name: Install dotnet core
+  package:
+    name: "dotnet-sdk-2.1.105"
+    state: present
+    update_cache: true

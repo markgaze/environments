@@ -10,3 +10,4 @@
 - import_tasks: vscode.yml
 - import_tasks: hyper.yml
 - import_tasks: vagrant.yml
+- import_tasks: dotnet.yml
