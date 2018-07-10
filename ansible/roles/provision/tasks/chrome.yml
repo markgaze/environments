@@ -1,4 +1,5 @@
 - name: "apt | ensure Google linux signing key present"
+  become: true
   apt_key: url=https://dl-ssl.google.com/linux/linux_signing_key.pub state=present
 
 - name: "apt | ensure Google chrome repo present"
