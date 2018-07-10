@@ -42,7 +42,7 @@ choco install notepadplusplus -y
 
 #--- Visual Studio ---
 choco install visualstudio2017enterprise -y
-C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe modify --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" --add Microsoft.VisualStudio.Workload.ManagedDesktop --includerecommended --passive --norestart
+C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe modify --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" --add Microsoft.VisualStudio.Workload.ManagedDesktop Microsoft.VisualStudio.Workload.NetCoreTools --includerecommended --passive --norestart --wait
 
 #--- VS Code ---
 code --install-extension Shan.code-settings-sync
