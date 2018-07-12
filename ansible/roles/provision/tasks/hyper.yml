@@ -1,5 +1,6 @@
 ---
 - name: Install gdebi
+  become: true
   apt:
     name: gdebi
     state: latest
