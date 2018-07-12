@@ -1,5 +1,6 @@
 ---
 - name: Download vagrant
+  become: true
   get_url: url={{ vagrant_url_deb }} dest={{vagrant_tmp_deb}}
 
 - name: Install vagrant for Debian OS family
