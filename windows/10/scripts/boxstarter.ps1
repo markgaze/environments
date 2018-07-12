@@ -24,7 +24,10 @@ Enable-WindowsOptionalFeature -Online -FeatureName containers -All -NoRestart
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux -NoRestart
 Invoke-WebRequest -Uri https://aka.ms/wsl-ubuntu-1604 -OutFile ~/Ubuntu.appx -UseBasicParsing
 Add-AppxPackage -Path ~/Ubuntu.appx
- 
+
+#--- Enable .NET 3.5
+dism /online /Enable-Feature /FeatureName:NetFx3
+
 #--- Tools ---
 choco install git -params '"/GitAndUnixToolsOnPath /WindowsTerminal"' -y
 choco install sysinternals -y
