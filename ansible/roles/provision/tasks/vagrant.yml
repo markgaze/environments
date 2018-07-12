@@ -3,6 +3,7 @@
   get_url: url={{ vagrant_url_deb }} dest={{vagrant_tmp_deb}}
 
 - name: Install vagrant for Debian OS family
+  become: true
   apt: deb={{vagrant_tmp_deb}}
 
 - name: Install reload plugin
