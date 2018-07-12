@@ -1,11 +1,13 @@
 ---
 - name: Download vagrant
-  become: true
-  get_url: url={{ vagrant_url_deb }} dest={{vagrant_tmp_deb}}
+  shell: wget {{ vagrant_url_deb }}
 
 - name: Install vagrant for Debian OS family
   become: true
-  apt: deb={{vagrant_tmp_deb}}
+  shell: gdebi -n vagrant_{{vagrant_version}}_x86_64.deb
 
 - name: Install reload plugin
   shell: vagrant plugin install vagrant-reload
+
+- name: Remove downloaded file
+  shell: rm vagrant_{{vagrant_version}}_x86_64.deb

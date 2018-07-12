@@ -18,6 +18,4 @@ git_repos:
   - dotfiles
 
 vagrant_version: "2.1.2"
-vagrant_tmp_dir: "$HOME/git/"
-vagrant_tmp_deb: "{{vagrant_tmp_dir}}/vagrant_{{vagrant_version}}.deb"
 vagrant_url_deb: "https://releases.hashicorp.com/vagrant/{{vagrant_version}}/vagrant_{{vagrant_version}}_x86_64.deb"
