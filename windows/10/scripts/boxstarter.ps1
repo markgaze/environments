@@ -26,7 +26,7 @@ Invoke-WebRequest -Uri https://aka.ms/wsl-ubuntu-1604 -OutFile ~/Ubuntu.appx -Us
 Add-AppxPackage -Path ~/Ubuntu.appx
 
 #--- Enable .NET 3.5
-dism /online /Enable-Feature /FeatureName:NetFx3
+dism /online /NoRestart /Enable-Feature /FeatureName:NetFx3
 
 #--- Tools ---
 choco install git -params '"/GitAndUnixToolsOnPath /WindowsTerminal"' -y
