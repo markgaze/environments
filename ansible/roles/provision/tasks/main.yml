@@ -12,3 +12,4 @@
 - import_tasks: vagrant.yml
 - import_tasks: dotnet.yml
 - import_tasks: remmina.yml
+- import_tasks: micro.yml
