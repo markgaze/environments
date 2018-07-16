@@ -1,5 +1,6 @@
 ---
 - name: Install node packages
+  become: true
   npm:
     name: "{{ item }}"
     global: yes
