@@ -11,6 +11,7 @@ apt_packages:
   - virtualbox-ext-pack
   - virtualbox-qt
   - libgconf2-4
+  - unrar
 
 node_packages:
 
