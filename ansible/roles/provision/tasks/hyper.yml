@@ -19,3 +19,6 @@
   copy:
     src: ../config/ubuntu.hyper.js
     dest: $HOME/.hyper.js
+
+- name: Set Hyper as default
+  shell: gsettings set org.gnome.desktop.default-applications.terminal exec hyper
