@@ -20,3 +20,6 @@ git_repos:
 
 vagrant_version: "2.1.2"
 vagrant_url_deb: "https://releases.hashicorp.com/vagrant/{{vagrant_version}}/vagrant_{{vagrant_version}}_x86_64.deb"
+
+franz_version: 5.0.0-beta.18
+franz_url: "https://github.com/meetfranz/franz/releases/download/v{{ franz_version}}/franz_{{ franz_version }}_amd64.deb"

@@ -13,3 +13,4 @@
 - import_tasks: dotnet.yml
 - import_tasks: remmina.yml
 - import_tasks: micro.yml
+- import_tasks: franz.yml
