@@ -12,6 +12,7 @@ apt_packages:
   - virtualbox-qt
   - libgconf2-4
   - unrar
+  - xclip
 
 node_packages:
 
