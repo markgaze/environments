@@ -1,0 +1,6 @@
+---
+- name: Install MS Teams
+  become: true
+  apt:
+    deb: "{{ teams_url }}"
+  when: teams_url is defined
