@@ -1,0 +1,20 @@
+---
+
+- name: "FFMPEG install"
+  become: true
+  apt:
+    name: ffmpeg
+    state: latest
+
+- name: "OBS Studio PPA"
+  become: true
+  apt_repository:
+    repo: "ppa:obsproject/obs-studio"
+    update_cache: yes
+    state: present
+
+- name: "OBS Studio install"
+  become: true
+  apt:
+    name: obs-studio
+    state: latest

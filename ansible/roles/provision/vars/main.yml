@@ -12,6 +12,8 @@ apt_packages:
   - virtualbox-qt
   - libgconf2-4
   - unrar
+  - software-properties-common
+  - python-software-properties
 
 node_packages:
 

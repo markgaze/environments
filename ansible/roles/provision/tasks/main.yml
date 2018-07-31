@@ -17,3 +17,4 @@
 - import_tasks: ulauncher.yml
 - import_tasks: teams.yml
 - import_tasks: googleplaymusic.yml
+- import_tasks: obs.yml
