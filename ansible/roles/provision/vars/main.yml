@@ -29,3 +29,6 @@ ulauncher_url: "https://github.com/Ulauncher/Ulauncher/releases/download/{{ ulau
 
 teams_version: "0.0.7"
 teams_url: "https://github.com/ivelkov/teams-for-linux/releases/download/v{{ teams_version }}/teams-for-linux_{{ teams_version }}_amd64.deb"
+
+gpm_version: "4.6.1"
+gpm_url: "https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/releases/download/v{{ gpm_version }}/google-play-music-desktop-player_{{ gpm_version }}_amd64.deb"

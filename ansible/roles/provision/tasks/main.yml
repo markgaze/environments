@@ -16,3 +16,4 @@
 - import_tasks: franz.yml
 - import_tasks: ulauncher.yml
 - import_tasks: teams.yml
+- import_tasks: googleplaymusic.yml
