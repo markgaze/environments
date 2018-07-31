@@ -23,3 +23,6 @@ vagrant_url_deb: "https://releases.hashicorp.com/vagrant/{{vagrant_version}}/vag
 
 franz_version: 5.0.0-beta.18
 franz_url: "https://github.com/meetfranz/franz/releases/download/v{{ franz_version}}/franz_{{ franz_version }}_amd64.deb"
+
+ulauncher_version: 4.1.0.r1
+ulauncher_url: "https://github.com/Ulauncher/Ulauncher/releases/download/{{ ulauncher_version }}/ulauncher_{{ ulauncher_version }}_all.deb"

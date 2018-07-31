@@ -14,3 +14,4 @@
 - import_tasks: remmina.yml
 - import_tasks: micro.yml
 - import_tasks: franz.yml
+- import_tasks: ulauncher.yml
