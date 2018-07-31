@@ -42,6 +42,7 @@ choco install hyper -y
 choco install paint.net -y
 choco install mremoteng -y
 choco install notepadplusplus -y
+choco install microsoft-teams -y
 
 #--- Visual Studio ---
 choco install visualstudio2017enterprise -y
