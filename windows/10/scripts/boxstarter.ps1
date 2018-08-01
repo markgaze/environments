@@ -31,6 +31,7 @@ dism /online /NoRestart /Enable-Feature /FeatureName:NetFx3
 #--- Tools ---
 choco install git -params '"/GitAndUnixToolsOnPath /WindowsTerminal"' -y
 choco install sysinternals -y
+choco install nodejs -y
  
 #--- Apps ---
 choco install 7zip -y
