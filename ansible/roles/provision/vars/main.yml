@@ -13,6 +13,7 @@ apt_packages:
   - libgconf2-4
   - unrar
   - xclip
+  - shutter
 
 node_packages:
 
