@@ -1,0 +1,6 @@
+---
+- name: Install NoMachine
+  become: true
+  apt:
+    deb: "{{ nomachine_url }}"
+  when: nomachine_url is defined

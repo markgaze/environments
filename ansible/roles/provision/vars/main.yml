@@ -34,3 +34,5 @@ teams_url: "https://github.com/ivelkov/teams-for-linux/releases/download/v{{ tea
 
 gpm_version: "4.6.1"
 gpm_url: "https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/releases/download/v{{ gpm_version }}/google-play-music-desktop-player_{{ gpm_version }}_amd64.deb"
+
+nomachine_url: "http://download.nomachine.com/download/6.2/Linux/nomachine_6.2.4_1_amd64.deb"
