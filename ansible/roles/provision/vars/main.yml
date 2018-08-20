@@ -14,6 +14,7 @@ apt_packages:
   - unrar
   - xclip
   - shutter
+  - shellcheck
 
 node_packages:
 
