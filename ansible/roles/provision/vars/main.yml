@@ -15,6 +15,7 @@ apt_packages:
   - xclip
   - shutter
   - shellcheck
+  - gnome-disk-utility
 
 node_packages:
 
