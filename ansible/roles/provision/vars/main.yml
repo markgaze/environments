@@ -1,4 +1,3 @@
----
 apt_packages:
   - bash-completion
   - docker.io
@@ -18,23 +17,34 @@ apt_packages:
   - gnome-disk-utility
 
 node_packages:
+  - tldr
+  - now
+  - fkill
+  - vtop
+  - create-react-app
+  - eslint
+  - prettier
+  - typescript
+  - '@angular/cli'
+  - gatsby-cli
+  - '@vue/cli'
 
 git_repos:
   - dotfiles
 
-vagrant_version: "2.1.2"
-vagrant_url_deb: "https://releases.hashicorp.com/vagrant/{{vagrant_version}}/vagrant_{{vagrant_version}}_x86_64.deb"
+vagrant_version: '2.1.2'
+vagrant_url_deb: 'https://releases.hashicorp.com/vagrant/{{vagrant_version}}/vagrant_{{vagrant_version}}_x86_64.deb'
 
 franz_version: 5.0.0-beta.18
-franz_url: "https://github.com/meetfranz/franz/releases/download/v{{ franz_version}}/franz_{{ franz_version }}_amd64.deb"
+franz_url: 'https://github.com/meetfranz/franz/releases/download/v{{ franz_version}}/franz_{{ franz_version }}_amd64.deb'
 
 ulauncher_version: 4.1.0.r1
-ulauncher_url: "https://github.com/Ulauncher/Ulauncher/releases/download/{{ ulauncher_version }}/ulauncher_{{ ulauncher_version }}_all.deb"
+ulauncher_url: 'https://github.com/Ulauncher/Ulauncher/releases/download/{{ ulauncher_version }}/ulauncher_{{ ulauncher_version }}_all.deb'
 
-teams_version: "0.0.7"
-teams_url: "https://github.com/ivelkov/teams-for-linux/releases/download/v{{ teams_version }}/teams-for-linux_{{ teams_version }}_amd64.deb"
+teams_version: '0.0.7'
+teams_url: 'https://github.com/ivelkov/teams-for-linux/releases/download/v{{ teams_version }}/teams-for-linux_{{ teams_version }}_amd64.deb'
 
-gpm_version: "4.6.1"
-gpm_url: "https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/releases/download/v{{ gpm_version }}/google-play-music-desktop-player_{{ gpm_version }}_amd64.deb"
+gpm_version: '4.6.1'
+gpm_url: 'https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/releases/download/v{{ gpm_version }}/google-play-music-desktop-player_{{ gpm_version }}_amd64.deb'
 
-nomachine_url: "http://download.nomachine.com/download/6.2/Linux/nomachine_6.2.4_1_amd64.deb"
+nomachine_url: 'http://download.nomachine.com/download/6.2/Linux/nomachine_6.2.4_1_amd64.deb'
