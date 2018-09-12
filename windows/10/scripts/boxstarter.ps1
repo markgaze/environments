@@ -45,6 +45,7 @@ choco install mremoteng -y
 choco install notepadplusplus -y
 choco install microsoft-teams -y
 choco install ilspy -y
+choco install sql-operations-studio -y
 
 #--- Visual Studio ---
 choco install visualstudio2017enterprise -y
