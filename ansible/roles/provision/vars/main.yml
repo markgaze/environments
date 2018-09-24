@@ -15,6 +15,7 @@ apt_packages:
   - shutter
   - shellcheck
   - gnome-disk-utility
+  - awscli
 
 node_packages:
   - tldr
