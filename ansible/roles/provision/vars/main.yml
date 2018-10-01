@@ -1,3 +1,5 @@
+username: markgaze
+
 apt_packages:
   - bash-completion
   - git
