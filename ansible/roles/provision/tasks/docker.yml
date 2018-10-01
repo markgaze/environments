@@ -1,0 +1,42 @@
+---
+- name: Add Docker GPG key
+  become: true
+  apt_key: url=https://download.docker.com/linux/ubuntu/gpg
+
+- name: Add Docker APT repository
+  become: true
+  apt_repository:
+    repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu {{ansible_distribution_release}} stable
+
+- name: Install list of packages
+  become: true
+  apt:
+    name: "{{ item }}"
+    state: present
+    update_cache: yes
+  with_items:
+    - apt-transport-https
+    - ca-certificates
+    - curl
+    - software-properties-common
+    - docker-ce
+
+- name: Install docker-compose
+  become: true
+  shell: curl -L https://github.com/docker/compose/releases/download/1.22.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose && chmod +x /usr/local/bin/docker-compose
+
+- name: Create docker group
+  become: true
+  group:
+    name: docker
+    state: present
+
+- name: Add user to group
+  become: true
+  user:
+    name: "{{ username }}"
+    append: yes
+    groups: docker
+
+- name: Set docker permissions
+  shell: chown {{ username }}:{{ username }} /home/{{ username }}/.docker -R && chmod g+rwx /home/{{ username }}/.docker -R

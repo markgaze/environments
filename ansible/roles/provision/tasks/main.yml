@@ -1,4 +1,5 @@
 - import_tasks: apt.yml
+- import_tasks: docker.yml
 - import_tasks: elementary-tweaks.yml
 - import_tasks: fonts.yml
 - import_tasks: git.yml
