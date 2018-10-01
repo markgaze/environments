@@ -1,7 +1,5 @@
 apt_packages:
   - bash-completion
-  - docker.io
-  - docker-compose
   - git
   - curl
   - wget
