@@ -1,4 +1,3 @@
----
 - name: Add Docker GPG key
   become: true
   apt_key: url=https://download.docker.com/linux/ubuntu/gpg
@@ -6,12 +5,12 @@
 - name: Add Docker APT repository
   become: true
   apt_repository:
-    repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu {{ansible_distribution_release}} stable
+    repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu xenial stable
 
 - name: Install list of packages
   become: true
   apt:
-    name: "{{ item }}"
+    name: '{{ item }}'
     state: present
     update_cache: yes
   with_items:
@@ -34,9 +33,10 @@
 - name: Add user to group
   become: true
   user:
-    name: "{{ username }}"
+    name: '{{ username }}'
     append: yes
     groups: docker
 
 - name: Set docker permissions
+  become: true
   shell: chown {{ username }}:{{ username }} /home/{{ username }}/.docker -R && chmod g+rwx /home/{{ username }}/.docker -R
