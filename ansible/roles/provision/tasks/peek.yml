@@ -1,0 +1,11 @@
+---
+- name: Add Peek repo
+  become: true
+  apt_repository:
+    repo: deb http://ppa.launchpad.net/peek-developers/stable/ubuntu xenial main
+    update_cache: yes
+
+- name: Install Peek
+  become: true
+  apt:
+    name: "peek"

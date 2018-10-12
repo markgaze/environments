@@ -18,3 +18,4 @@
 - import_tasks: googleplaymusic.yml
 - import_tasks: nomachine.yml
 - import_tasks: sql-ops.yml
+- import_tasks: peek.yml
