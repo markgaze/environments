@@ -16,6 +16,7 @@ apt_packages:
   - shellcheck
   - gnome-disk-utility
   - awscli
+  - libreoffice
 
 node_packages:
   - tldr
