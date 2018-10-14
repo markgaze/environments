@@ -17,6 +17,7 @@ apt_packages:
   - gnome-disk-utility
   - awscli
   - libreoffice
+  - gimp
 
 node_packages:
   - tldr
