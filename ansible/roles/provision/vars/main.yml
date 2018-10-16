@@ -18,6 +18,7 @@ apt_packages:
   - awscli
   - libreoffice
   - gimp
+  - snapd
 
 node_packages:
   - tldr
