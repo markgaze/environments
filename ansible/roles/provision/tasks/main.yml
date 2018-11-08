@@ -19,3 +19,4 @@
 - import_tasks: nomachine.yml
 - import_tasks: sql-ops.yml
 - import_tasks: peek.yml
+- import_tasks: awscli.yml
