@@ -15,7 +15,6 @@ apt_packages:
   - xclip
   - shellcheck
   - gnome-disk-utility
-  - awscli
   - libreoffice
   - gimp
   - snapd
