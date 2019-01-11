@@ -18,6 +18,8 @@ apt_packages:
   - libreoffice
   - gimp
   - snapd
+  - fonts-crosextra-carlito 
+  - fonts-crosextra-caladea
 
 node_packages:
   - tldr
