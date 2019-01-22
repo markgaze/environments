@@ -21,6 +21,7 @@ apt_packages:
   - fonts-crosextra-carlito 
   - fonts-crosextra-caladea
   - vifm
+  - silversearcher-ag
 
 node_packages:
   - tldr
