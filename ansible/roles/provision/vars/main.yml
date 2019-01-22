@@ -20,6 +20,7 @@ apt_packages:
   - snapd
   - fonts-crosextra-carlito 
   - fonts-crosextra-caladea
+  - vifm
 
 node_packages:
   - tldr
