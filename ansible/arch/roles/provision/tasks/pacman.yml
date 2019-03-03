@@ -5,7 +5,7 @@
 
 - name: Update pacman packages
   become: true
-  shell: pacman -Syu
+  shell: pacman -Syu --noconfirm
 
 - name: Install pacman packages
   become: true
