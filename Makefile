@@ -47,4 +47,4 @@ endif
 
 .PHONY: ansible
 ansible:
-	ansible-playbook -i ansible/hosts ansible/playbook.yml --verbose --ask-become-pass
+	ansible-playbook -i ansible/ubuntu/hosts ansible/ubuntu/playbook.yml --verbose --ask-become-pass
