@@ -9,4 +9,5 @@
     repo: https://github.com/markgaze/{{ item }}
     dest: $HOME/git/markgaze/{{ item }}
     force: no
+    update: yes
   with_items: "{{git_repos}}"
