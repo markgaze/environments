@@ -5,9 +5,7 @@
 
 - name: Update pacman packages
   become: true
-  pacman:
-    # update_cache: yes
-    upgrade: yes
+  shell: pacman -Syu
 
 - name: Install pacman packages
   become: true
