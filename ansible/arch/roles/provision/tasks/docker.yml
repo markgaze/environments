@@ -23,6 +23,7 @@
     mode: "g+rwx"
 
 - name: Set Docker service enabled
+  become: true
   systemd:
     name: docker
     enabled: yes
