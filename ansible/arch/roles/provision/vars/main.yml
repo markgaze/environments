@@ -1,3 +1,23 @@
+pacman_packages:
+  - git
+  - feh
+  - compton
+  - polybar
+  - vim
+  - xclip
+  - shellcheck
+  - virtualbox
+  - gimp
+  - libreoffice-fresh
+  - aws-cli
+  - bash-completion
+  - snapd
+  - go
+  - hugo
+  - rofi
+  - vifm
+  - cowsay
+
 node_packages:
   - vtop
   - typescript
