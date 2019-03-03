@@ -6,7 +6,6 @@
     state: latest
 
 - name: Install fonts from AUR
-  become: true
   aur:
     name:
       - ttf-ms-fonts
