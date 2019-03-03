@@ -30,6 +30,8 @@ install-ansible:
 ifeq ($(DISTRO),ManjaroLinux)
 	sudo pacman -Sy
 	sudo pacman -S ansible --noconfirm
+	pamac build ansible-aur-git
+	sudo pacman -S yay --noconfirm
 	sudo pacman -S cowsay --noconfirm
 else
 	sudo apt-get update
