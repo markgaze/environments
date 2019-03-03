@@ -21,3 +21,8 @@
     state: directory
     owner: "{{ lookup('env', 'USER') }}"
     mode: "g+rwx"
+
+- name: Set Docker service enabled
+  systemd:
+    name: docker
+    enabled: yes
