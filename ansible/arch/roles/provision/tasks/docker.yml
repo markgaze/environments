@@ -1,0 +1,26 @@
+---
+- name: Install docker
+  become: true
+  pacman:
+    name: docker
+    state: latest
+
+- name: Install docker-compose
+  become: true
+  pacman:
+    name: docker-compose
+    state: latest
+
+- name: Add Docker group
+  become: true
+  shell: usermod -aG docker $USER
+
+- name: Ensure Docker folder exists
+  file:
+    path: /home/$USER/.docker
+    state: directory
+
+- name: Add user to Docker group
+  shell: |
+    chown $USER:$USER /home/$USER/.docker -R
+    chmod g+rwx /home/$USER/.docker -R
