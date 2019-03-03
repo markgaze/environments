@@ -17,6 +17,7 @@ pacman_packages:
   - rofi
   - vifm
   - cowsay
+  - flameshot
 
 node_packages:
   - vtop
