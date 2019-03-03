@@ -30,6 +30,7 @@ install-ansible:
 ifeq ($(DISTRO),ManjaroLinux)
 	sudo pacman -Sy
 	sudo pacman -S ansible --noconfirm
+	sudo pacman -S cowsay --noconfirm
 else
 	sudo apt-get update
 	sudo apt-get install software-properties-common
