@@ -1,0 +1,4 @@
+---
+- name: Install Google Play Music Desktop
+  aur:
+    name: gpmdp
