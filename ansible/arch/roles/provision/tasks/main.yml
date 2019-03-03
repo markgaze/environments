@@ -1,1 +1,4 @@
 - import_tasks: pacman.yml
+- import_tasks: nodejs.yml
+- import_tasks: docker.yml
+- import_tasks: fonts.yml

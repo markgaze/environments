@@ -1,0 +1,12 @@
+---
+- name: Install fonts from pacman
+  become: true
+  pacman:
+    name: ttf-croscore, ttf-font-awesome
+    state: latest
+
+- name: Install fonts from AUR
+  aur:
+    name:
+      - ttf-ms-fonts
+      - ttf-google-fonts-git
