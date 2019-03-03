@@ -14,3 +14,10 @@
   pacman:
     name: palemoon-bin
     state: absent
+
+- name: Install Qutebrowser
+  become: true
+  pacman:
+    name: qutebrowser
+    state: latest
+
