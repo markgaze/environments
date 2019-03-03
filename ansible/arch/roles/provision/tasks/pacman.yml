@@ -1,5 +1,10 @@
 ---
+- name: Get best pacman mirrors
+  become: true
+  shell: pacman-mirrors --fasttrack
+
 - name: Update pacman cache
+  become: true
   pacman:
     update_cache: yes
     upgrade: yes
