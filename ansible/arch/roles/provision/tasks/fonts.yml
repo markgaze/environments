@@ -2,7 +2,7 @@
 - name: Install fonts from pacman
   become: true
   pacman:
-    name: ttf-croscore, ttf-font-awesome
+    name: ttf-croscore, ttf-font-awesome, ttf-fira-code
     state: latest
 
 - name: Install fonts from AUR
