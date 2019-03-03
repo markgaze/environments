@@ -13,11 +13,11 @@
 
 - name: Add Docker group
   become: true
-  shell: usermod -aG docker $USER
+  shell: "usermod -aG docker {{ lookup('env', 'USER') }}"
 
 - name: Ensure Docker folder exists
   file:
-    path: /home/$USER/.docker
+    path: "/home/{{ lookup('env', 'USER') }}/.docker"
     state: directory
-    owner: $USER
+    owner: "{{ lookup('env', 'USER') }}"
     mode: "g+rwx"
