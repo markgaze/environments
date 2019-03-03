@@ -11,4 +11,5 @@
     name:
       - ttf-ms-fonts
       - ttf-google-fonts-git
+      - ttf-symbola
     skip_installed: true
