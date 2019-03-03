@@ -19,8 +19,5 @@
   file:
     path: /home/$USER/.docker
     state: directory
-
-- name: Add user to Docker group
-  shell: |
-    chown $USER:$USER /home/$USER/.docker -R
-    chmod g+rwx /home/$USER/.docker -R
+    owner: $USER
+    mode: "g+rwx"
