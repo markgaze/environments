@@ -12,6 +12,5 @@
 - name: Install pacman packages
   become: true
   pacman:
-    name: "{{ item }}"
+    name: "{{pacman_packages}}"
     state: latest
-  with_items: "{{pacman_packages}}"
