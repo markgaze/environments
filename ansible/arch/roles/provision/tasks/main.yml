@@ -4,3 +4,4 @@
 - import_tasks: fonts.yml
 - import_tasks: browsers.yml
 - import_tasks: vscode.yml
+- import_tasks: git.yml
