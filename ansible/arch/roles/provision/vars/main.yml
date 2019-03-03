@@ -26,3 +26,6 @@ node_packages:
   - create-react-app
   - '@angular/cli'
   - '@vue/cli'
+
+git_repos:
+  - dotfiles
