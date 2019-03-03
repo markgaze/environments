@@ -29,7 +29,7 @@ install: install-ansible install-krypton
 install-ansible:
 ifeq ($(DISTRO),ManjaroLinux)
 	sudo pacman -Sy
-	sudo pacman -S ansible
+	sudo pacman -S ansible --noconfirm
 else
 	sudo apt-get update
 	sudo apt-get install software-properties-common
@@ -48,9 +48,9 @@ endif
 .PHONY: ansible
 ansible:
 ifeq ($(DISTRO),ManjaroLinux)
-	ansible-arch
+	make ansible-arch
 else
-	ansible-ubuntu
+	make ansible-ubuntu
 endif
 
 .PHONY: ansible-ubuntu
