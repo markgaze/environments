@@ -10,3 +10,4 @@
     name:
       - ttf-ms-fonts
       - ttf-google-fonts-git
+    skip_installed: true
