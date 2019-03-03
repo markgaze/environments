@@ -28,6 +28,7 @@ install: install-ansible install-krypton
 .PHONY: install-ansible
 install-ansible:
 ifeq ($(DISTRO),ManjaroLinux)
+	sudo pacman -Sy
 	sudo pacman -S ansible
 else
 	sudo apt-get update
