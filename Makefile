@@ -1,4 +1,5 @@
 HOME ?= `$HOME`
+DISTRO=$(shell lsb_release -si)
 
 explain:
 	### Welcome
@@ -16,35 +17,45 @@ explain:
 	#
 	###
 
-provision: setup-git-config ansible
+.PHONY:
+describe:
+	echo "Distro: $(DISTRO)"
+
+provision: ansible
 
 install: install-ansible install-krypton
 
 .PHONY: install-ansible
 install-ansible:
+ifeq ($(DISTRO),ManjaroLinux)
+	sudo pacman -S ansible
+else
 	sudo apt-get update
 	sudo apt-get install software-properties-common
 	sudo apt-add-repository ppa:ansible/ansible
 	sudo apt-get update
 	sudo apt-get install ansible
+endif
 
 .PHONY: install-krypton
 install-krypton:
+ifneq ($(DISTRO),ManjaroLinux)
 	curl https://krypt.co/kr | sh
 	kr pair
-
-.PHONY: setup-git-config
-setup-git-config:
-ifeq ("$(wildcard $(HOME)/.gitconfig)","")
-	@echo "Enter your full name - This is how git will report your work";
-	@read name; \
-	git config --global user.name "$$name"
-
-	@echo "Enter your work email address";
-	@read email; \
-	git config --global user.email $$email
 endif
 
 .PHONY: ansible
 ansible:
-	ansible-playbook -i ansible/ubuntu/hosts ansible/ubuntu/playbook.yml --verbose --ask-become-pass
+ifeq ($(DISTRO),ManjaroLinux)
+	ansible-arch
+else
+	ansible-ubuntu
+endif
+
+.PHONY: ansible-ubuntu
+ansible-ubuntu:
+	ansible-playbook -i ansible/hosts ansible/ubuntu/playbook.yml --verbose --ask-become-pass
+
+.PHONY: ansible-arch
+ansible-arch:
+	ansible-playbook -i ansible/hosts ansible/arch/playbook.yml --verbose --ask-become-pass

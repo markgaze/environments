@@ -1,0 +1,8 @@
+node_packages:
+  - vtop
+  - typescript
+  - eslint
+  - prettier
+  - create-react-app
+  - '@angular/cli'
+  - '@vue/cli'

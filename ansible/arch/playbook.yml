@@ -1,4 +1,4 @@
-- name: a playbook to setup an Ubuntu-based host machine
+- name: a playbook to setup an Arch-based host machine
   hosts: host
   connection: local
   roles:
