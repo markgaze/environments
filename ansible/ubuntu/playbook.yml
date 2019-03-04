@@ -1,0 +1,5 @@
+- name: a playbook to setup an Ubuntu-based host machine
+  hosts: host
+  connection: local
+  roles:
+    - provision

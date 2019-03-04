@@ -1,0 +1,23 @@
+---
+- name: Install Chrome
+  aur:
+    name: google-chrome
+
+- name: Install Firefox
+  become: true
+  pacman:
+    name: firefox
+    state: latest
+
+- name: Remove Palemoon
+  become: true
+  pacman:
+    name: palemoon-bin
+    state: absent
+
+- name: Install Qutebrowser
+  become: true
+  pacman:
+    name: qutebrowser
+    state: latest
+

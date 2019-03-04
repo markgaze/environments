@@ -1,0 +1,34 @@
+pacman_packages:
+  - git
+  - feh
+  - compton
+  - polybar
+  - vim
+  - xclip
+  - shellcheck
+  - virtualbox
+  - gimp
+  - libreoffice-fresh
+  - aws-cli
+  - bash-completion
+  - snapd
+  - go
+  - hugo
+  - rofi
+  - vifm
+  - cowsay
+  - flameshot
+  - lastpass-cli
+  - python-pip
+
+node_packages:
+  - vtop
+  - typescript
+  - eslint
+  - prettier
+  - create-react-app
+  - '@angular/cli'
+  - '@vue/cli'
+
+git_repos:
+  - dotfiles

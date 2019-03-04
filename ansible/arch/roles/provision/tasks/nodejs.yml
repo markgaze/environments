@@ -1,0 +1,20 @@
+---
+- name: Install nodejs
+  become: true
+  pacman:
+    name: nodejs
+    state: latest
+
+- name: Install npm
+  become: true
+  pacman:
+    name: npm
+    state: latest
+
+- name: Install node packages
+  become: true
+  npm:
+    name: "{{ item }}"
+    global: yes
+    state: latest
+  with_items: "{{node_packages}}"
