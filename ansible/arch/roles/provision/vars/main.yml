@@ -19,7 +19,7 @@ pacman_packages:
   - cowsay
   - flameshot
   - lastpass-cli
-  - rust
+  - python-pip
 
 node_packages:
   - vtop
