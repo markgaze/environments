@@ -20,6 +20,7 @@ pacman_packages:
   - flameshot
   - lastpass-cli
   - python-pip
+  - xcursor-neutral
 
 node_packages:
   - vtop
