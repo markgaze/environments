@@ -1,7 +1,7 @@
 ---
-# - name: Get best pacman mirrors
-#   become: true
-#   shell: pacman-mirrors --fasttrack
+- name: Get best pacman mirrors
+  become: true
+  shell: pacman-mirrors --fasttrack
 
 - name: Update pacman packages
   become: true
