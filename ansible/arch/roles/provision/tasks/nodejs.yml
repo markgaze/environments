@@ -10,3 +10,11 @@
   pacman:
     name: npm
     state: latest
+
+- name: Install node packages
+  become: true
+  npm:
+    name: "{{ item }}"
+    global: yes
+    state: latest
+  with_items: "{{node_packages}}"
