@@ -30,6 +30,7 @@ node_packages:
   - create-react-app
   - '@angular/cli'
   - '@vue/cli'
+  - gulp
 
 git_repos:
   - dotfiles
