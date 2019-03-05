@@ -18,3 +18,8 @@
     global: yes
     state: latest
   with_items: "{{node_packages}}"
+
+- name: Install node packages with unsafe-perm
+  become: true
+  command: "npm install -g {{ item }} --unsafe-perm"
+  with_items: "{{ unsafe_node_packages }}"

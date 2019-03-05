@@ -32,5 +32,8 @@ node_packages:
   - '@vue/cli'
   - gulp
 
+unsafe_node_packages:
+  - backstopjs
+
 git_repos:
   - dotfiles
