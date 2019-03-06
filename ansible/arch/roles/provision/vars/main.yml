@@ -21,6 +21,8 @@ pacman_packages:
   - lastpass-cli
   - python-pip
   - xcursor-neutral
+  - ncmpcpp
+  - mpc
 
 node_packages:
   - vtop
