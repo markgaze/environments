@@ -23,6 +23,7 @@ pacman_packages:
   - xcursor-neutral
   - ncmpcpp
   - mpc
+  - xorg-xbacklight
 
 node_packages:
   - vtop
