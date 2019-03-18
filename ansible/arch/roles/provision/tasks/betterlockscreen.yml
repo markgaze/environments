@@ -8,3 +8,8 @@
 - name: Install betterlockscreen
   aur:
     name: betterlockscreen-git
+
+- name: Reinstall i3exit
+  become: true
+  pacman:
+    name: i3exit
