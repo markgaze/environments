@@ -25,6 +25,7 @@ pacman_packages:
   - mpc
   - xorg-xbacklight
   - devilspie
+  - calcurse
 
 node_packages:
   - vtop
