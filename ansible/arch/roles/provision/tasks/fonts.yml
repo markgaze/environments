@@ -11,4 +11,5 @@
       - ttf-ms-fonts
       - ttf-google-fonts-git
       - ttf-symbola
+      - nerd-fonts-complete
     skip_installed: true
