@@ -24,6 +24,7 @@ pacman_packages:
   - ncmpcpp
   - mpc
   - xorg-xbacklight
+  - devilspie
 
 node_packages:
   - vtop
