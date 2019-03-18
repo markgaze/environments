@@ -1,0 +1,10 @@
+---
+- name: Remove other lockscreen packages
+  become: true
+  pacman:
+    name: manjaro-i3-settings i3exit i3lock
+    state: absent
+
+- name: Install betterlockscreen
+  aur:
+    name: betterlockscreen-git
