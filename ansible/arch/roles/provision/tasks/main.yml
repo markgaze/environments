@@ -5,4 +5,5 @@
 - import_tasks: browsers.yml
 - import_tasks: vscode.yml
 - import_tasks: betterlockscreen.yml
+- import_tasks: podcast.yml
 - import_tasks: git.yml
