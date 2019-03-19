@@ -21,3 +21,7 @@
     name: qutebrowser
     state: latest
 
+- name: Install Googler
+  aur:
+    name: googler
+
