@@ -26,6 +26,9 @@ pacman_packages:
   - xorg-xbacklight
   - devilspie
   - calcurse
+  - python-oauth2
+  - python-httplib2
+  - mpv
 
 node_packages:
   - vtop

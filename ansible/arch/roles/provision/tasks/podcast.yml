@@ -1,4 +1,8 @@
 ---
+- name: Install castero dependencies
+  aur:
+    name: python-pympv
+
 - name: Install castero
   aur:
     name: castero-git
