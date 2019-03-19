@@ -29,6 +29,7 @@ pacman_packages:
   - python-oauth2
   - python-httplib2
   - mpv
+  - neofetch
 
 node_packages:
   - vtop
