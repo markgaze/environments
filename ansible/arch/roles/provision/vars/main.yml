@@ -30,6 +30,7 @@ pacman_packages:
   - python-httplib2
   - mpv
   - neofetch
+  - jq
 
 node_packages:
   - vtop
