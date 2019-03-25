@@ -6,3 +6,7 @@
 - name: Install castero
   aur:
     name: castero-git
+
+- name: Install curseradio
+  aur:
+    name: curseradio-git
