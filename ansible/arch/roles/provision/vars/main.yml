@@ -32,6 +32,7 @@ pacman_packages:
   - neofetch
   - jq
   - qalculate-gtk
+  - scribus
 
 node_packages:
   - vtop
