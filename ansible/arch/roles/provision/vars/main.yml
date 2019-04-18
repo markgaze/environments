@@ -26,7 +26,7 @@ pacman_packages:
   - xorg-xbacklight
   - devilspie
   - calcurse
-  - python-oauth2
+  - python-oauth2client
   - python-httplib2
   - mpv
   - neofetch
