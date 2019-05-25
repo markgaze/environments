@@ -33,6 +33,7 @@ pacman_packages:
   - jq
   - qalculate-gtk
   - scribus
+  - yarn
 
 node_packages:
   - vtop
