@@ -7,7 +7,7 @@
     "build:ubuntu": "docker build -t environment-ubuntu -f Dockerfile-ubuntu .",
     "start:arch": "npm run build:arch && docker run -it --rm --name environment-arch environment-arch bash",
     "start:ubuntu": "npm run build:ubuntu && docker run -it --rm --name environment-ubuntu environment-ubuntu bash",
-    "shellcheck": "shellcheck provision.sh software/**/*.sh"
+    "shellcheck": "shellcheck provision.sh config/*.sh helpers/*.sh software/**/*.sh"
   },
   "repository": {
     "type": "git",

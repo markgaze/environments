@@ -1,5 +1,6 @@
 #!/bin/bash
 
-./software/git/install.sh
+source ./helpers/install-package.sh
 
-./config/dotfiles.sh
+source ./software/git/install.sh
+source ./config/dotfiles.sh
