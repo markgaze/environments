@@ -1,0 +1,14 @@
+FROM archlinux
+
+RUN pacman -Syyu --noconfirm && \
+  pacman -S sudo --noconfirm
+
+RUN useradd -m -p XRGAlDcWAnjks markgaze -s /bin/bash && \
+  usermod -aG wheel markgaze && \
+  echo 'markgaze  ALL=(ALL:ALL) ALL' >> /etc/sudoers
+
+USER markgaze
+
+RUN mkdir -p /home/markgaze/git/markgaze
+
+COPY . /home/markgaze/environments

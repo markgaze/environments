@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "My environment setup scripts",
   "scripts": {
-    "build:docker": "docker build -t environment-test .",
-    "start": "npm run build:docker && docker run -it --rm --name environment-test environment-test bash",
+    "build:arch": "docker build -t environment-arch -f Dockerfile-arch .",
+    "build:ubuntu": "docker build -t environment-ubuntu -f Dockerfile-ubuntu .",
+    "start:arch": "npm run build:arch && docker run -it --rm --name environment-arch environment-arch bash",
+    "start:ubuntu": "npm run build:ubuntu && docker run -it --rm --name environment-ubuntu environment-ubuntu bash",
     "shellcheck": "shellcheck provision.sh software/**/*.sh"
   },
   "repository": {
