@@ -1,9 +1,0 @@
-- import_tasks: pacman.yml
-- import_tasks: nodejs.yml
-- import_tasks: docker.yml
-- import_tasks: fonts.yml
-- import_tasks: browsers.yml
-- import_tasks: vscode.yml
-- import_tasks: betterlockscreen.yml
-- import_tasks: podcast.yml
-- import_tasks: git.yml

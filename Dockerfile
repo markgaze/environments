@@ -1,0 +1,14 @@
+FROM ubuntu
+
+RUN apt-get update && \
+  apt-get upgrade -y && \
+  apt install sudo -y
+
+RUN useradd -m -p XRGAlDcWAnjks markgaze -s /bin/bash && \
+  usermod -aG sudo markgaze
+
+USER markgaze
+
+RUN mkdir -p /home/markgaze/git/markgaze
+
+COPY . /home/markgaze/environments

@@ -1,7 +1,0 @@
----
-- name: Install VS Code
-  aur:
-    name: visual-studio-code-bin
-
-- name: Install VS Code sync plugin
-  shell: code --install-extension Shan.code-settings-sync

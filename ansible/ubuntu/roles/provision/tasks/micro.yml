@@ -1,8 +1,0 @@
----
-- name: Creates directory
-  file: path=$HOME/bin state=directory
-
-- name: Install Micro
-  shell: curl https://getmic.ro | bash
-  args:
-    chdir: $HOME/bin

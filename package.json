@@ -1,0 +1,29 @@
+{
+  "name": "environments",
+  "version": "1.0.0",
+  "description": "My environment setup scripts",
+  "scripts": {
+    "build:docker": "docker build -t environment-test .",
+    "start": "npm run build:docker && docker run -it --rm --name environment-test environment-test bash",
+    "shellcheck": "shellcheck provision.sh software/**/*.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markgaze/environments.git"
+  },
+  "author": "markgaze",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/markgaze/environments/issues"
+  },
+  "homepage": "https://github.com/markgaze/environments#readme",
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "shellcheck": "^0.4.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run shellcheck"
+    }
+  }
+}

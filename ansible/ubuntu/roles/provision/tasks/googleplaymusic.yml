@@ -1,6 +1,0 @@
----
-- name: Install Google Play Music
-  become: true
-  apt:
-    deb: "{{ gpm_url }}"
-  when: gpm_url is defined

@@ -1,7 +1,0 @@
----
-
-- name: Install Franz
-  become: true
-  apt:
-    deb: "{{ franz_url }}"
-  when: franz_url is defined

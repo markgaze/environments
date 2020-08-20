@@ -1,5 +1,0 @@
----
-- name: Run Makefile
-  shell: make provision
-  args:
-    chdir: $HOME/git/apps/dotfiles

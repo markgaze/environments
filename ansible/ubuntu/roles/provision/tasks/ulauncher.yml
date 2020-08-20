@@ -1,6 +1,0 @@
----
-- name: Install Ulauncher
-  become: true
-  apt:
-    deb: "{{ ulauncher_url }}"
-  when: ulauncher_url is defined
