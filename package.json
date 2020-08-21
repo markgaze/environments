@@ -5,8 +5,8 @@
   "scripts": {
     "build:arch": "docker build -t environment-arch -f Dockerfile-arch .",
     "build:ubuntu": "docker build -t environment-ubuntu -f Dockerfile-ubuntu .",
-    "start:arch": "npm run build:arch && docker run -it --rm --name environment-arch environment-arch bash",
-    "start:ubuntu": "npm run build:ubuntu && docker run -it --rm --name environment-ubuntu environment-ubuntu bash",
+    "start:arch": "npm run build:arch && docker run -it --rm --name environment-arch --hostname arch-test environment-arch",
+    "start:ubuntu": "npm run build:ubuntu && docker run -it --rm --name environment-ubuntu --hostname ubuntu-test environment-ubuntu",
     "shellcheck": "shellcheck provision.sh config/*.sh helpers/*.sh software/**/*.sh",
     "vet": "npm run shellcheck"
   },
