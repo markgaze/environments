@@ -2,9 +2,13 @@
 
 source ./helpers/install-package.sh
 
+echo "Updating packages..."
 source ./helpers/update.sh
 
+echo "Installing git..."
 source ./software/git/install.sh
+
+echo "Configuring dotfiles..."
 source ./config/dotfiles.sh
 
 echo "DONE!"
