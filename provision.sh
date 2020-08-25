@@ -13,6 +13,7 @@ source ./config/dotfiles.sh
 echo "Installing software..."
 source ./software/vim/install.sh
 source ./software/tmux/install.sh
+source ./software/node/install.sh
 
 echo "DONE!"
 echo "Restart your terminal or run 'source ~/.bashrc' to apply the dotfiles config"
