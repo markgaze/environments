@@ -5,6 +5,9 @@
   "scripts": {
     "build:arch": "docker build -t environment-arch -f Dockerfile-arch .",
     "build:ubuntu": "docker build -t environment-ubuntu -f Dockerfile-ubuntu .",
+    "build-fresh:arch": "npm run build:arch -- --no-cache",
+    "build-fresh:ubuntu": "npm run build:ubuntu -- --no-cache",
+    "build-fresh": "npm run build-fresh:arch && npm run build-fresh:ubuntu",
     "start:arch": "npm run build:arch && docker run -it --rm --name environment-arch --hostname arch-test environment-arch",
     "start:ubuntu": "npm run build:ubuntu && docker run -it --rm --name environment-ubuntu --hostname ubuntu-test environment-ubuntu",
     "shellcheck": "shellcheck provision.sh config/*.sh helpers/*.sh software/**/*.sh",
