@@ -3,6 +3,9 @@ FROM archlinux
 RUN pacman -Syyu --noconfirm && \
   pacman -S sudo --noconfirm
 
+# Add some things that we need to speed up provisioning
+RUN pacman -S base-devel go --noconfirm
+
 RUN useradd -m -p XRGAlDcWAnjks markgaze -s /bin/bash && \
   usermod -aG wheel markgaze && \
   echo 'markgaze  ALL=(ALL:ALL) ALL' >> /etc/sudoers

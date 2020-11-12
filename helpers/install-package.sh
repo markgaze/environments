@@ -1,9 +1,9 @@
 #! /bin/bash
 
 install-package() {
-  os=$(awk '/^ID=/' /etc/*-release | awk -F'=' '{ print tolower($2) }');
+  check-os
   package=$1
-  case $os in
+  case ${os:?} in
     arch)
       sudo pacman -S "$package" --noconfirm
       ;;
