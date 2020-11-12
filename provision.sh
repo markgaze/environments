@@ -15,5 +15,9 @@ source ./software/vim/install.sh
 source ./software/tmux/install.sh
 source ./software/node/install.sh
 
+echo "Installing global node packages..."
+# shellcheck disable=SC1090
+source ./software/node/packages/**/install.sh
+
 echo "DONE!"
 echo "Restart your terminal or run 'source ~/.bashrc' to apply the dotfiles config"
