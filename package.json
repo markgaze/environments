@@ -11,7 +11,8 @@
     "start:arch": "npm run build:arch && docker run -it --rm --name environment-arch --hostname arch-test environment-arch",
     "start:ubuntu": "npm run build:ubuntu && docker run -it --rm --name environment-ubuntu --hostname ubuntu-test environment-ubuntu",
     "shellcheck": "shellcheck provision.sh config/*.sh helpers/*.sh software/**/*.sh",
-    "vet": "npm run shellcheck"
+    "vet": "npm run shellcheck",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -24,12 +25,7 @@
   },
   "homepage": "https://github.com/markgaze/environments#readme",
   "devDependencies": {
-    "husky": "^4.2.5",
-    "shellcheck": "^0.4.4"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run vet"
-    }
+    "husky": "^7.0.0",
+    "shellcheck": "^1.1.0"
   }
 }
