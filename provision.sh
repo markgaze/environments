@@ -15,7 +15,6 @@ echo "Installing software..."
 source ./software/vim/install.sh
 source ./software/tmux/install.sh
 source ./software/node/install.sh
-source ./software/krypton/install.sh
 
 echo "Installing global node packages..."
 # shellcheck disable=SC1090
