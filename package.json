@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/markgaze/environments#readme",
   "devDependencies": {
-    "husky": "^7.0.0",
+    "husky": "^8.0.1",
     "shellcheck": "^1.1.0"
   }
 }
