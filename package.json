@@ -12,7 +12,8 @@
     "start:ubuntu": "npm run build:ubuntu && docker run -it --rm --name environment-ubuntu --hostname ubuntu-test environment-ubuntu",
     "shellcheck": "shellcheck provision.sh config/*.sh helpers/*.sh software/**/*.sh",
     "vet": "npm run shellcheck",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "get-package-list": "yay -Qe | awk '{print $1}' > packages.txt"
   },
   "repository": {
     "type": "git",
