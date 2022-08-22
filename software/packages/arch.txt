@@ -61,6 +61,7 @@ rsync
 rustdesk
 sed
 shotcut
+slack-desktop
 supabase-git
 tailscale
 tar
