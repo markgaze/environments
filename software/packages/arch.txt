@@ -50,7 +50,7 @@ polybar
 prismatik-psieg-bin
 qalculate-gtk
 qemu-desktop
-quickemu-git
+quickemu
 quickgui-bin
 qutebrowser
 ranger
